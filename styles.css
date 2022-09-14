@@ -10,7 +10,34 @@ body {
   background-position: left top;
   font-family: "Zilla Slab", serif;
 }
-
+.blog-body{
+  background-image: url("./bg.png");
+  background-size: cover;
+  background-position: left top;
+  font-family: "Zilla Slab", serif;
+}
+header{
+  background: #262727;
+  padding: 20px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+.heading-tittle{
+  color:#fff;
+  font-size: 30px;
+  font-weight: normal;
+}
+.menu-link .home{
+  color:#fff;
+  font-size: 22px;
+}
+.menu-link .blog{
+  color:#fff;
+  margin-left: 10px;
+  font-size: 22px;
+}
 .box-container {
   width: 70%;
   margin: 0 auto;
@@ -158,13 +185,12 @@ button {
   color: white;
   border-radius: 15px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    92.49deg,
-    rgba(255, 255, 255, 0.1) 0.18%,
-    rgba(255, 255, 255, 0.05) 99.85%
-  );
+  background: linear-gradient(92.49deg,
+  rgba(255, 255, 255, 0.1) 0.18%,
+  rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+
 }
 
 #modal-background {
@@ -181,7 +207,7 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 576px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
@@ -192,11 +218,11 @@ button {
 }
 
 
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 578px) {
   #histories{
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
+    display: grid;
     grid-row-gap: 20px;
     justify-items: stretch;
     align-items: stretch;
