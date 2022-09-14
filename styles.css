@@ -20,6 +20,11 @@ header{
   background: #262727;
   padding: 20px;
 }
+.blog-header{
+  position: relative;
+  background: #262727;
+  padding: 27px;
+}
 nav{
   display: flex;
   justify-content: space-around;
@@ -29,8 +34,13 @@ nav{
   font-size: 30px;
   font-weight: normal;
 }
+.blog-menu{
+  position: absolute;
+  right: 18%;
+  font-size: 22px;
+}
 .menu-link .home{
-  color:#fff;
+  color:gray;
   font-size: 22px;
 }
 .menu-link .blog{

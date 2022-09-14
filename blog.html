@@ -10,60 +10,53 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body class="blog-body">
-    <header class="container">
-        <nav class="navbar rounded">
-          <div class="container-fluid">
-            <div>
-              <a class="navbar-link fw-bold text-white" href="index.html">Home</a>
-              <a class="navbar-link text-black fw-semibold ps-4 " href="#">Blog</a>           
-            </div>
-          </div>
+    <header class=" blog-header">
+        <nav class="navbar rounded">         
+            <div class="blog-menu">
+              <a class="navbar-link home text-white" href="index.html">Home</a>
+              <a class="navbar-link blog text-secondary ps-2 " href="#">Blog</a>           
+            </div>          
         </nav>  
         <div>
-          <hr class="navbar-hr" />
+          
         </div>       
       </header>
 
 
-    <main  class="container mt-3">
+    <main  class="container mt-5">
         
         <section>
-            <h3 class="shadow-lg text-center text-danger p-3  border border-1">What is the difference between local storage and session storage</h1>
-                      <p class="py-3 text-white">
-                        <span class="fw-bold text-primary">Local Storage :</span> Their main difference is that local storage data does not expire, whereas session storage data gets cleared when the user closes its browser window. <br>
-                        <span class="fw-bold text-primary">Sessions Storage :</span> Page sessions are valid for only one tab at a time. So, if a user has three tabs open, each one will have its own page session.Since local storage is not session-based, all the data must be deleted via javascript or manually.
-                      </p>
+            <h3 class="shadow-lg text-center text-danger p-3  border border-1">What is difference between localStorage and sessionStorage :</h1>
+                      <p class="py-3 text-white h5"><span class="text-primary h3">LocalStorage : </span> This read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets cleared when the page session ends.That is when the page is closed. It is cleared when the last “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito session).</p>
+                    <p  class="py-3 text-white  h5"><span class="text-primary h3">SessionStorage : </span>Session Storage objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends.
+                    A unique page session gets created once a document is loaded in a browser tab. Page sessions are valid for only one tab at a time. Pages are only saved for the amount of time that the tab or the browser is open; they do not persist after the page reloads and restores. A new session is created each time a tab or window is opened; this is different from session cookies.A unique page session gets created once a document is loaded in a browser tab. Page sessions are valid for only one tab at a time.</p>
                
                 
           </section>
 
      
         <section>
-            <h3 class="shadow-lg text-center text-danger p-3 border border-1">What is the difference between global scope and block scope</h1>
-                <p class="py-3 text-white">
-                   <span class="fw-bold text-primary">Block Scope :</span> A block scoped variable means that the variable defined within a block will not be accessible from outside the block. <br>
-                   <span class="fw-bold text-primary">Global Scope :</span> Variables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program.
-                </p>
+            <h3 class="shadow-lg text-center text-danger p-3 border border-1">Global scope and Block scope :</h1>
+                <p class="py-3 text-white  h5"><span class="text-primary h3">Global Scope : </span>The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable.</p>
+                  <p class="py-3 text-white  h5"><span class="text-primary h3">Block Scope : </span>Block scope is also a sub-type of local scope. The block scope can be defined as the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or something else. You are only allowed to refer to these variables from within the curly brackets {}.</p>
+
         </section>
 
       
         <section class="pb-5">
-            <h3 class="shadow-lg text-center text-danger p-3 border border-1">How does javascript Event loop work?</h1>
-
-                <p class="py-3 text-white">
-                    <span class="fw-bold text-primary">Event Loop :</span> The event loop is the secret behind JavaScript's asynchronous 
-                    programming. JS executes all operations on a single thread, but using a 
-                    few smart data structures, it gives us the illusion of multi-threading.
-                </p>
+            <h3 class="shadow-lg text-center text-danger p-3 border border-1">Event loop in JS :</h1>
+                <p class="py-3 text-white  h5"><span class="text-primary h3">Event Loop : </span>A block scoped variable means that the variable defined within a block will not be accessible from outside the block.The call stack is responsible for keeping track of all the operations in line to be executed. Whenever a function is finished, it is popped from the stack.The event queue is responsible for sending new functions to the stack for processing. It follows the queue data structure to maintain the correct sequence in which all operations should be sent for execution.</p>
         </section>
 
 
         <section class="pb-5">
-            <h3 class="shadow-lg text-center text-danger p-3 border border-1">How do I get undefined in JavaScript?</h1>
-
-                <p class="py-3 text-white">
-                    <span class="fw-bold text-primary"> Undefined:</span> You will get undefined value when you call a non-existent property or method of an object. In the above example, a function Sum does not return any result but still we try to assign its resulted value to a variable. So in this case, result will be undefined.
-                </p>
+            <h3 class="shadow-lg text-center text-danger p-3 border border-1">How many types of undefined :</h1>
+                <p class="py-3 text-white  h5"><span class="text-primary h3">Undefiend : </span>The global undefined property represents the primitive value undefined. It is one of JavaScript's primitive types. <br> <br>
+                   <span class="text-danger">1.</span> Writable <br> 
+                   <span class="text-danger">2.</span> Enumerable <br> 
+                   <span class="text-danger">3.</span> Configurable <br> <br>
+                  Undefined is a property of the global object. That is, it is a variable in global scope. The initial value of undefined is the primitive value undefined.In all non-legacy browsers, undefined is a non-configurable, non-writable property. (Even when this is not the case, avoid overriding it.)
+                  A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.</p>
         </section>
     </main>
 </body>
